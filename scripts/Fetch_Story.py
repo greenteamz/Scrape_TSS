@@ -3,11 +3,11 @@ import re
 import time
 import requests
 from bs4 import BeautifulSoup
-from gtts import gTTS
+#from gtts import gTTS
 from datetime import datetime
 
 # ======= Config =======
-MAX_PAGES = 2310
+MAX_PAGES = 2 # 2310
 OUTPUT_DIR = "stories_text"
 STORY_SELECTOR = "h2.entry-title a"
 CONTENT_SELECTOR = "div.entry-content"
