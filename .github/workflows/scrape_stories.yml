@@ -23,7 +23,6 @@ jobs:
         python scripts/Fetch_Story.py
 
     - name: Authenticate and Push Changes
-      if: ${{ env.continue == 'true' }}
       env:
         GH_PAT: ${{ secrets.GH_PAT }}
       run: |
