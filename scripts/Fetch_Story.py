@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 # ======= Config =======
-MAX_PAGES = 1200
+MAX_PAGES = 2310
 OUTPUT_DIR = "stories_text"
 STORY_SELECTOR = "h2.entry-title a"
 CONTENT_SELECTOR = "div.entry-content"
@@ -31,10 +31,10 @@ for f in os.listdir(OUTPUT_DIR):
             existing_titles.add(match.group(1))
 
 debug_entries = []
-count = 1
+count = 8245
 
 # 🟡 Step 2: Start scraping
-for page in range(1, MAX_PAGES + 1):
+for page in range(1201, MAX_PAGES + 1):
     try:
         page_url = BASE_URL.format(page)
         print(f"\n📄 Page {page} -> {page_url}")
@@ -57,8 +57,6 @@ for page in range(1, MAX_PAGES + 1):
             safe_title = re.sub(r'[\\/*?:"<>|]', "", title).strip()
 
             safe_title = safe_title.replace(" ", "_")
-
-
 
 
             if safe_title in existing_titles:
