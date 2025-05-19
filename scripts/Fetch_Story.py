@@ -7,12 +7,12 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 # ======= Config =======
-MAX_PAGES = 2310
-OUTPUT_DIR = "stories_text"
+MAX_PAGES = 1200
+OUTPUT_DIR = "stories_text_19"
 STORY_SELECTOR = "h2.entry-title a"
 CONTENT_SELECTOR = "div.entry-content"
 BASE_URL = "https://tamilsexstories.info/page/{}/"
-DELAY_SECONDS = 1
+DELAY_SECONDS = 0
 # ======================
 
 now = datetime.now()
