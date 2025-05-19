@@ -8,7 +8,7 @@ from datetime import datetime
 
 # ======= Config =======
 MAX_PAGES = 1200
-OUTPUT_DIR = "stories_text_19"
+OUTPUT_DIR = "stories_text"
 STORY_SELECTOR = "h2.entry-title a"
 CONTENT_SELECTOR = "div.entry-content"
 BASE_URL = "https://tamilsexstories.info/page/{}/"
